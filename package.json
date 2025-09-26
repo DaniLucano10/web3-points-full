@@ -1,0 +1,14 @@
+{
+  "name": "web3-points-full",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "contracts_project",
+    "packages/*"
+  ],
+  "scripts": {
+    "frontend": "npm run dev --workspace=frontend",
+    "contracts": "npm run --workspace=contracts_project"
+  }
+}

@@ -1,0 +1,28 @@
+# General
+.env
+.env.*
+*.log
+deployed-address.txt
+
+# Node.js / Hardhat / Frontend
+node_modules/
+/contracts_project/artifacts/
+/contracts_project/cache/
+/contracts_project/coverage/
+/contracts_project/coverage.json
+/frontend/dist/
+/frontend/.vite/
+/frontend/node_modules/
+/contracts_project/node_modules/
+
+
+# Rust
+/backend-rust/target/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
