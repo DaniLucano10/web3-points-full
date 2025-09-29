@@ -36,7 +36,7 @@ export default function App(){
       const res = await fetch('http://localhost:3001/mint',{
         method: 'POST',
         headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ user: account, amount: 10 })
+        body: JSON.stringify({ user: account, amount: 1 })
       })
       const text = await res.text()
       try {
@@ -95,7 +95,7 @@ export default function App(){
               </svg>
               Procesando...
             </>
-          ) : 'Pedir 10 puntos'}
+          ) : 'Pedir 1 punto'}
         </button>
       </div>
     </div>

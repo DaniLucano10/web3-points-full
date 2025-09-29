@@ -34,7 +34,7 @@ async fn mint(data: web::Data<AppState>, body: web::Json<MintReq>) -> impl Respo
             return HttpResponse::BadRequest()
                 .json(serde_json::json!({ "error": format!("Invalid address: {}", e) }))
         }
-    };
+    };  
     let amount = U256::from(body.amount);
 
     let call = data.contract
